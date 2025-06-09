@@ -74,6 +74,7 @@
             // 
             // btnOpen
             // 
+            btnOpen.BackColor = Color.BlueViolet;
             btnOpen.Font = new Font("Yu Gothic UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnOpen.Location = new Point(13, 34);
             btnOpen.Margin = new Padding(4, 5, 4, 5);
@@ -81,7 +82,7 @@
             btnOpen.Size = new Size(110, 50);
             btnOpen.TabIndex = 1;
             btnOpen.Text = "Open";
-            btnOpen.UseVisualStyleBackColor = true;
+            btnOpen.UseVisualStyleBackColor = false;
             btnOpen.Click += btnOpen_Click;
             // 
             // dgvData
@@ -97,6 +98,7 @@
             // 
             // cmbDeleteType
             // 
+            cmbDeleteType.BackColor = SystemColors.ScrollBar;
             cmbDeleteType.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbDeleteType.FormattingEnabled = true;
             cmbDeleteType.Location = new Point(13, 25);
@@ -106,28 +108,31 @@
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = Color.BlueViolet;
             btnDelete.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDelete.Location = new Point(13, 75);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(110, 50);
             btnDelete.TabIndex = 13;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnClearData
             // 
+            btnClearData.BackColor = Color.BlueViolet;
             btnClearData.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnClearData.Location = new Point(129, 75);
             btnClearData.Name = "btnClearData";
             btnClearData.Size = new Size(110, 50);
             btnClearData.TabIndex = 14;
             btnClearData.Text = "Clear data";
-            btnClearData.UseVisualStyleBackColor = true;
+            btnClearData.UseVisualStyleBackColor = false;
             btnClearData.Click += btnClearData_Click;
             // 
             // cmbExportFormat
             // 
+            cmbExportFormat.BackColor = SystemColors.ScrollBar;
             cmbExportFormat.Font = new Font("Yu Gothic UI", 11.25F);
             cmbExportFormat.FormattingEnabled = true;
             cmbExportFormat.Location = new Point(8, 32);
@@ -137,52 +142,55 @@
             // 
             // btnExport
             // 
+            btnExport.BackColor = Color.BlueViolet;
             btnExport.Font = new Font("Yu Gothic UI", 11.25F);
             btnExport.Location = new Point(143, 32);
             btnExport.Name = "btnExport";
             btnExport.Size = new Size(110, 50);
             btnExport.TabIndex = 17;
             btnExport.Text = "Export";
-            btnExport.UseVisualStyleBackColor = true;
+            btnExport.UseVisualStyleBackColor = false;
             btnExport.Click += btnExport_Click;
             // 
             // cmbClassFilter
             // 
+            cmbClassFilter.BackColor = SystemColors.ScrollBar;
             cmbClassFilter.Font = new Font("Yu Gothic UI", 11.25F);
             cmbClassFilter.FormattingEnabled = true;
             cmbClassFilter.Location = new Point(1122, 41);
             cmbClassFilter.Name = "cmbClassFilter";
             cmbClassFilter.Size = new Size(183, 39);
             cmbClassFilter.TabIndex = 18;
-          
             // 
             // btnFilterClass
             // 
+            btnFilterClass.BackColor = Color.BlueViolet;
             btnFilterClass.Font = new Font("Yu Gothic UI", 11.25F);
             btnFilterClass.Location = new Point(1313, 32);
             btnFilterClass.Name = "btnFilterClass";
             btnFilterClass.Size = new Size(110, 50);
             btnFilterClass.TabIndex = 19;
             btnFilterClass.Text = "Filter";
-            btnFilterClass.UseVisualStyleBackColor = true;
+            btnFilterClass.UseVisualStyleBackColor = false;
             btnFilterClass.Click += btnFilterClass_Click;
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.MediumPurple;
             groupBox1.Controls.Add(cmbDeleteType);
             groupBox1.Controls.Add(btnDelete);
             groupBox1.Controls.Add(btnClearData);
-            groupBox1.Location = new Point(8, 500);
+            groupBox1.Location = new Point(8, 504);
             groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4, 5, 4, 5);
             groupBox1.Size = new Size(258, 138);
             groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
-          
             // 
             // btnGoBack
             // 
+            btnGoBack.BackColor = Color.BlueViolet;
             btnGoBack.Font = new Font("Yu Gothic UI", 12F);
             btnGoBack.Location = new Point(15, 41);
             btnGoBack.Margin = new Padding(4, 5, 4, 5);
@@ -190,14 +198,15 @@
             btnGoBack.Size = new Size(110, 50);
             btnGoBack.TabIndex = 21;
             btnGoBack.Text = "Go back";
-            btnGoBack.UseVisualStyleBackColor = true;
+            btnGoBack.UseVisualStyleBackColor = false;
             btnGoBack.Click += btnGoBack_Click;
             // 
             // groupBox2
             // 
+            groupBox2.BackColor = Color.MediumPurple;
             groupBox2.Controls.Add(btnOpen);
             groupBox2.Controls.Add(btnsqlDate);
-            groupBox2.Location = new Point(8, 128);
+            groupBox2.Location = new Point(11, 131);
             groupBox2.Margin = new Padding(4, 5, 4, 5);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(4, 5, 4, 5);
@@ -207,6 +216,7 @@
             // 
             // btnsqlDate
             // 
+            btnsqlDate.BackColor = Color.BlueViolet;
             btnsqlDate.Font = new Font("Yu Gothic UI", 11.25F);
             btnsqlDate.Location = new Point(131, 36);
             btnsqlDate.Margin = new Padding(4, 5, 4, 5);
@@ -214,22 +224,24 @@
             btnsqlDate.Size = new Size(110, 50);
             btnsqlDate.TabIndex = 40;
             btnsqlDate.Text = "Sql";
-            btnsqlDate.UseVisualStyleBackColor = true;
+            btnsqlDate.UseVisualStyleBackColor = false;
             btnsqlDate.Click += btnsqlDate_Click;
             // 
             // btnGraphics
             // 
+            btnGraphics.BackColor = Color.BlueViolet;
             btnGraphics.Font = new Font("Yu Gothic UI", 11.25F);
             btnGraphics.Location = new Point(17, 32);
             btnGraphics.Name = "btnGraphics";
             btnGraphics.Size = new Size(110, 50);
             btnGraphics.TabIndex = 23;
             btnGraphics.Text = "Pie ";
-            btnGraphics.UseVisualStyleBackColor = true;
+            btnGraphics.UseVisualStyleBackColor = false;
             btnGraphics.Click += btnGraphics_Click;
             // 
             // formsPlot1
             // 
+            formsPlot1.BackColor = Color.MediumPurple;
             formsPlot1.DisplayScale = 1F;
             formsPlot1.Location = new Point(13, 648);
             formsPlot1.Margin = new Padding(4, 5, 4, 5);
@@ -239,7 +251,9 @@
             // 
             // formsPlot2
             // 
+            formsPlot2.BackColor = Color.MediumPurple;
             formsPlot2.DisplayScale = 1F;
+            formsPlot2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             formsPlot2.Location = new Point(729, 648);
             formsPlot2.Margin = new Padding(4, 5, 4, 5);
             formsPlot2.Name = "formsPlot2";
@@ -248,28 +262,31 @@
             // 
             // btnScatterPlot
             // 
+            btnScatterPlot.BackColor = Color.BlueViolet;
             btnScatterPlot.Font = new Font("Yu Gothic UI", 11.25F);
             btnScatterPlot.Location = new Point(17, 88);
             btnScatterPlot.Name = "btnScatterPlot";
             btnScatterPlot.Size = new Size(110, 50);
             btnScatterPlot.TabIndex = 26;
             btnScatterPlot.Text = "Scatter";
-            btnScatterPlot.UseVisualStyleBackColor = true;
+            btnScatterPlot.UseVisualStyleBackColor = false;
             btnScatterPlot.Click += btnScatterPlot_Click;
             // 
             // btnExportPDF
             // 
+            btnExportPDF.BackColor = Color.BlueViolet;
             btnExportPDF.Font = new Font("Yu Gothic UI", 11.25F);
             btnExportPDF.Location = new Point(143, 100);
             btnExportPDF.Name = "btnExportPDF";
             btnExportPDF.Size = new Size(110, 76);
             btnExportPDF.TabIndex = 27;
             btnExportPDF.Text = "Export PDF";
-            btnExportPDF.UseVisualStyleBackColor = true;
+            btnExportPDF.UseVisualStyleBackColor = false;
             btnExportPDF.Click += btnExportPDF_Click;
             // 
             // txtSearch
             // 
+            txtSearch.BackColor = SystemColors.ScrollBar;
             txtSearch.Font = new Font("Yu Gothic UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSearch.Location = new Point(143, 48);
             txtSearch.Margin = new Padding(4, 5, 4, 5);
@@ -279,6 +296,7 @@
             // 
             // btnSearch
             // 
+            btnSearch.BackColor = Color.BlueViolet;
             btnSearch.Font = new Font("Yu Gothic UI", 12F);
             btnSearch.Location = new Point(548, 41);
             btnSearch.Margin = new Padding(4, 5, 4, 5);
@@ -286,7 +304,7 @@
             btnSearch.Size = new Size(110, 50);
             btnSearch.TabIndex = 29;
             btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.UseVisualStyleBackColor = false;
             btnSearch.Click += btnSearch_Click;
             // 
             // label1
@@ -313,7 +331,6 @@
             rbClose.TabStop = true;
             rbClose.Text = "Near objects";
             rbClose.UseVisualStyleBackColor = true;
-         
             // 
             // rbDistant
             // 
@@ -330,6 +347,7 @@
             // 
             // btnRedshift
             // 
+            btnRedshift.BackColor = Color.BlueViolet;
             btnRedshift.Font = new Font("Yu Gothic UI", 12F);
             btnRedshift.Location = new Point(971, 41);
             btnRedshift.Margin = new Padding(4, 5, 4, 5);
@@ -337,11 +355,12 @@
             btnRedshift.Size = new Size(110, 50);
             btnRedshift.TabIndex = 34;
             btnRedshift.Text = "Order";
-            btnRedshift.UseVisualStyleBackColor = true;
+            btnRedshift.UseVisualStyleBackColor = false;
             btnRedshift.Click += btnRedshift_Click;
             // 
             // groupBox4
             // 
+            groupBox4.BackColor = Color.MediumPurple;
             groupBox4.Controls.Add(lblView);
             groupBox4.Controls.Add(cmbViewOption);
             groupBox4.Controls.Add(rbDistant);
@@ -373,6 +392,7 @@
             // 
             // cmbViewOption
             // 
+            cmbViewOption.BackColor = SystemColors.ScrollBar;
             cmbViewOption.FormattingEnabled = true;
             cmbViewOption.Location = new Point(1569, 42);
             cmbViewOption.Name = "cmbViewOption";
@@ -381,11 +401,12 @@
             // 
             // groupBox3
             // 
+            groupBox3.BackColor = Color.MediumPurple;
             groupBox3.Controls.Add(btnSaveSqlChanges);
             groupBox3.Controls.Add(cmbExportFormat);
             groupBox3.Controls.Add(btnExport);
             groupBox3.Controls.Add(btnExportPDF);
-            groupBox3.Location = new Point(13, 235);
+            groupBox3.Location = new Point(13, 242);
             groupBox3.Margin = new Padding(4, 5, 4, 5);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(4, 5, 4, 5);
@@ -396,6 +417,7 @@
             // 
             // btnSaveSqlChanges
             // 
+            btnSaveSqlChanges.BackColor = Color.BlueViolet;
             btnSaveSqlChanges.Font = new Font("Yu Gothic UI", 11.25F);
             btnSaveSqlChanges.Location = new Point(13, 100);
             btnSaveSqlChanges.Margin = new Padding(4, 5, 4, 5);
@@ -403,7 +425,7 @@
             btnSaveSqlChanges.Size = new Size(110, 76);
             btnSaveSqlChanges.TabIndex = 41;
             btnSaveSqlChanges.Text = "Changes SQL";
-            btnSaveSqlChanges.UseVisualStyleBackColor = true;
+            btnSaveSqlChanges.UseVisualStyleBackColor = false;
             btnSaveSqlChanges.Click += btnSaveSqlChanges_Click;
             // 
             // lblData
@@ -437,6 +459,7 @@
             // 
             // groupBox5
             // 
+            groupBox5.BackColor = Color.MediumPurple;
             groupBox5.Controls.Add(btnGraphics);
             groupBox5.Controls.Add(btnScatterPlot);
             groupBox5.Location = new Point(561, 648);
@@ -449,19 +472,20 @@
             // 
             // btnEnviarArchivo
             // 
+            btnEnviarArchivo.BackColor = Color.BlueViolet;
             btnEnviarArchivo.Font = new Font("Yu Gothic UI", 11.25F);
             btnEnviarArchivo.Location = new Point(309, 562);
             btnEnviarArchivo.Name = "btnEnviarArchivo";
             btnEnviarArchivo.Size = new Size(110, 50);
             btnEnviarArchivo.TabIndex = 40;
             btnEnviarArchivo.Text = "Email";
-            btnEnviarArchivo.UseVisualStyleBackColor = true;
+            btnEnviarArchivo.UseVisualStyleBackColor = false;
             btnEnviarArchivo.Click += btnEnviarArchivo_Click;
             // 
-            // progressBar1
+            // pgb
             // 
-            pgb.Location = new Point(15, 464);
-            pgb.Name = "progressBar1";
+            pgb.Location = new Point(15, 466);
+            pgb.Name = "pgb";
             pgb.Size = new Size(232, 34);
             pgb.TabIndex = 41;
             pgb.Visible = false;
@@ -469,17 +493,16 @@
             // lblProgress
             // 
             lblProgress.AutoSize = true;
-            lblProgress.Location = new Point(13, 436);
+            lblProgress.Location = new Point(13, 438);
             lblProgress.Name = "lblProgress";
             lblProgress.Size = new Size(0, 25);
             lblProgress.TabIndex = 42;
-            
             // 
             // FrmDataSet
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSteelBlue;
+            BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(1806, 1050);
             Controls.Add(lblProgress);
             Controls.Add(pgb);
@@ -498,7 +521,6 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmDataSet";
             Text = "Form2";
-          
             ((System.ComponentModel.ISupportInitialize)dgvData).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);

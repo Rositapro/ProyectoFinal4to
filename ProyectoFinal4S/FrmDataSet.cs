@@ -32,6 +32,7 @@ namespace ProyectoFinal4S
         string connectionString = @"Server=localhost\SQLEXPRESS;Database=NASA;Trusted_connection=yes; TrustServerCertificate=true";
         public FrmDataSet()
         {
+
             InitializeComponent();
             cmbViewOption.Items.Clear();
             cmbViewOption.Items.AddRange(new string[] { "Table", "Txt plain" });

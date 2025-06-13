@@ -1,17 +1,19 @@
-namespace ProyectoFinal4S
+﻿using System;
+
+namespace ProyectoFinal4S.ProyectoFinal4S
 {
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMenu());
+            ProyectoFinal4S.ApplicationConfiguration.Initialize();
+            System.Windows.Forms.Application.Run(new FrmMenu());
         }
     }
 }

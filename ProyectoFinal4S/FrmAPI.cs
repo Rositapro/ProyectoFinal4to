@@ -1,6 +1,6 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 
-namespace ProyectoFinal4S
+namespace ProyectoFinal4S.ProyectoFinal4S
 {
     public partial class FrmAPI : Form
     {
@@ -19,6 +19,51 @@ namespace ProyectoFinal4S
             cbMonth.SelectedIndex = 0;
 
             dgvData.CellContentClick += dgvData_CellContentClick;
+        }
+
+
+        private void dgvData_CellContentClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && dgvData.Columns[e.ColumnIndex].Name == "url")
+            {
+                var cellValue = dgvData.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
+                if (!string.IsNullOrEmpty(cellValue))
+                {
+                    try
+                    {
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                        {
+                            FileName = cellValue,
+                            UseShellExecute = true
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se pudo abrir el enlace: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        public class ApodResponse
+        {
+            public string title { get; set; }
+            public string date { get; set; }
+            public string explanation { get; set; }
+            public string url { get; set; }
+            public string media_type { get; set; }
+        }
+
+        private void cbMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            var menu = new FrmMenu();
+            menu.Show();
+            Close();
         }
 
         private async void btnSearch_Click(object sender, EventArgs e)
@@ -78,50 +123,6 @@ namespace ProyectoFinal4S
             {
                 MessageBox.Show("Error al obtener los datos: " + ex.Message);
             }
-        }
-
-        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && dgvData.Columns[e.ColumnIndex].Name == "url")
-            {
-                var cellValue = dgvData.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
-                if (!string.IsNullOrEmpty(cellValue))
-                {
-                    try
-                    {
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                        {
-                            FileName = cellValue,
-                            UseShellExecute = true
-                        });
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("No se pudo abrir el enlace: " + ex.Message);
-                    }
-                }
-            }
-        }
-
-        public class ApodResponse
-        {
-            public string title { get; set; }
-            public string date { get; set; }
-            public string explanation { get; set; }
-            public string url { get; set; }
-            public string media_type { get; set; }
-        }
-
-        private void cbMonth_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGoBack_Click(object sender, EventArgs e)
-        {
-            FrmMenu menu = new FrmMenu();
-            menu.Show();
-            this.Close();
         }
     }
 }

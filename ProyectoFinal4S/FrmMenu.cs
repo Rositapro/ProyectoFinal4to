@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoFinal4S
+namespace ProyectoFinal4S.ProyectoFinal4S
 {
     public partial class FrmMenu : Form
     {
@@ -21,14 +14,14 @@ namespace ProyectoFinal4S
         {
             Form form = new FrmAPI();
             form.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnDataSet_Click(object sender, EventArgs e)
         {
             Form form = new FrmDataSet();
             form.Show();
-            this.Hide();
+            Hide();
         }
     }
 }

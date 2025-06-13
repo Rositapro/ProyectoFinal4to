@@ -1,6 +1,7 @@
-﻿namespace ProyectoFinal4S
+﻿
+namespace ProyectoFinal4S.ProyectoFinal4S
 {
-    partial class FrmMenu
+    public partial class FrmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -10,10 +11,10 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <paramname="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && components is not null)
             {
                 components.Dispose();
             }
@@ -28,17 +29,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
-            btnAPI = new Button();
-            btnDataSet = new Button();
+            var resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
+            btnAPI = new System.Windows.Forms.Button();
+            btnDataSet = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // btnAPI
             // 
-            btnAPI.Font = new Font("Yu Gothic", 11.25F);
-            btnAPI.Location = new Point(405, 116);
+            btnAPI.Font = new System.Drawing.Font("Yu Gothic", 11.25f);
+            btnAPI.Location = new System.Drawing.Point(405, 116);
             btnAPI.Name = "btnAPI";
-            btnAPI.Size = new Size(124, 41);
+            btnAPI.Size = new System.Drawing.Size(124, 41);
             btnAPI.TabIndex = 0;
             btnAPI.Text = "NASA API";
             btnAPI.UseVisualStyleBackColor = true;
@@ -46,10 +47,10 @@
             // 
             // btnDataSet
             // 
-            btnDataSet.Font = new Font("Yu Gothic", 11.25F);
-            btnDataSet.Location = new Point(405, 183);
+            btnDataSet.Font = new System.Drawing.Font("Yu Gothic", 11.25f);
+            btnDataSet.Location = new System.Drawing.Point(405, 183);
             btnDataSet.Name = "btnDataSet";
-            btnDataSet.Size = new Size(124, 36);
+            btnDataSet.Size = new System.Drawing.Size(124, 36);
             btnDataSet.TabIndex = 1;
             btnDataSet.Text = "DATA SET";
             btnDataSet.UseVisualStyleBackColor = true;
@@ -57,10 +58,10 @@
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(822, 475);
+            AutoScaleDimensions = new System.Drawing.SizeF(7f, 15f);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            base.BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new System.Drawing.Size(822, 475);
             Controls.Add(btnDataSet);
             Controls.Add(btnAPI);
             Name = "Form3";
@@ -70,7 +71,7 @@
 
         #endregion
 
-        private Button btnAPI;
-        private Button btnDataSet;
+        private System.Windows.Forms.Button btnAPI;
+        private System.Windows.Forms.Button btnDataSet;
     }
 }

@@ -24,7 +24,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using PdfColors = QuestPDF.Helpers.Colors;
 using ScottPlotColors = ScottPlot.Colors;
 
-namespace ProyectoFinal4S
+namespace ProyectoFinal4S.ProyectoFinal4S
 {
     public partial class FrmDataSet : Form
     {
@@ -32,7 +32,6 @@ namespace ProyectoFinal4S
         string connectionString = @"Server=localhost\SQLEXPRESS;Database=NASA;Trusted_connection=yes; TrustServerCertificate=true";
         public FrmDataSet()
         {
-
             InitializeComponent();
             cmbViewOption.Items.Clear();
             cmbViewOption.Items.AddRange(new string[] { "Table", "Txt plain" });
@@ -138,7 +137,6 @@ namespace ProyectoFinal4S
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
-
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "CSV and TXT files (*.csv;*.txt)|*.csv;*.txt";
             openFileDialog.Title = "Open file";
@@ -180,7 +178,6 @@ namespace ProyectoFinal4S
             {
                 MessageBox.Show("Error loading data: " + ex.Message);
             }
-
         }
         // Función para mostrar filas en DataGridView
         private void DisplayRows(List<string[]> rows)
@@ -193,7 +190,6 @@ namespace ProyectoFinal4S
         }
         private void LlenarTreeView(List<string[]> rows)
         {
-
             treeView.Nodes.Clear(); // Limpiar los nodos existentes
 
             // Agrupar las filas por "class" (o cualquier otro campo que elijas)
@@ -226,7 +222,6 @@ namespace ProyectoFinal4S
                     }
                 }
             }
-
         }
         // Función auxiliar para obtener el índice de una columna por su nombre
         private int ObtenerIndiceColumna(string nombreColumna)
@@ -265,40 +260,6 @@ namespace ProyectoFinal4S
 
             DisplayRows(filasFiltradas);
 
-            //string filtroSeleccionado = cmbClassFilter.SelectedItem.ToString();
-
-            //// Buscar índice de la columna "class"
-            //int indexClass = -1;
-            //foreach (DataGridViewColumn col in dgvData.Columns)
-            //{
-            //    if (col.HeaderText.Equals("class", StringComparison.OrdinalIgnoreCase))
-            //    {
-            //        indexClass = col.Index;
-            //        break;
-            //    }
-            //}
-
-            //if (indexClass == -1)
-            //{
-            //    MessageBox.Show("No se encontró la columna 'class'.");
-            //    return;
-            //}
-
-            //// Mostrar todas las filas si seleccionó "TODOS"
-            //if (filtroSeleccionado.Equals("TODOS", StringComparison.OrdinalIgnoreCase))
-            //{
-            //    DisplayRows(allRows);
-            //    return;
-            //}
-
-            //// Filtrar filas que coincidan exactamente con el filtro seleccionado (insensible a mayúsculas)
-            //var filasFiltradas = allRows.Where(row =>
-            //    row.Length > indexClass &&
-            //    row[indexClass].Equals(filtroSeleccionado, StringComparison.OrdinalIgnoreCase)
-            //).ToList();
-
-            //DisplayRows(filasFiltradas);
-            //CountData();
         }
 
         private void btnExport_Click(object sender, EventArgs e)
@@ -382,7 +343,6 @@ namespace ProyectoFinal4S
                     lines.Add(string.Join(",", cells));
                 }
             }
-
             File.WriteAllLines(ruta, lines);
         }
         private string EscapeForCsv(string value)
@@ -431,7 +391,6 @@ namespace ProyectoFinal4S
                     listaObjetos.Add(dict);
                 }
             }
-
             var opciones = new JsonSerializerOptions { WriteIndented = true };
             string jsonString = JsonSerializer.Serialize(listaObjetos, opciones);
 
@@ -539,6 +498,7 @@ namespace ProyectoFinal4S
                 }
             }
         }
+      
 
         private void btnClearData_Click(object sender, EventArgs e)
         {
@@ -683,6 +643,8 @@ namespace ProyectoFinal4S
             }
         }
 
+     
+
         private void btnExportPDF_Click(object sender, EventArgs e)
         {
             if (dgvData.Rows.Count == 0)
@@ -780,7 +742,6 @@ namespace ProyectoFinal4S
             {
                 MessageBox.Show("Error exporting to PDF: " + ex.Message);
             }
-
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -859,6 +820,7 @@ namespace ProyectoFinal4S
             CountData();
         }
 
+      
 
         private void CountData()
         {
